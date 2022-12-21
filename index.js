@@ -173,26 +173,8 @@ const PinView = React.forwardRef(
           ))}
         </View>
         <View style={[PinViewStyle.buttonAreaContainer, buttonAreaStyle]}>
-          <ViewButton
-            disabled={disabled}
-            accessible={accessible}
-            activeOpacity={activeOpacity}
-            onButtonPress={() => onButtonPressHandle("one", "1")}
-            buttonSize={buttonSize}
-            text={buttonTextByKey.one}
-            customTextStyle={buttonTextStyle}
-            customViewStyle={buttonViewStyle}
-          />
-          <ViewButton
-            disabled={disabled}
-            accessible={accessible}
-            activeOpacity={activeOpacity}
-            onButtonPress={() => onButtonPressHandle("two", "2")}
-            buttonSize={buttonSize}
-            text={buttonTextByKey.two}
-            customTextStyle={buttonTextStyle}
-            customViewStyle={buttonViewStyle}
-          />
+         
+        
           <ViewButton
             disabled={disabled}
             accessible={accessible}

@@ -49,7 +49,7 @@ const ViewInput = ({
   size = 40,
   customStyle,
   text,
-  inputFilledStyle = { backgroundColor: "#000" },
+  inputFilledStyle = { backgroundColor: "green" },
   inputEmptyStyle = { backgroundColor: "#FFF" },
 }) => {
   if (showInputText) {

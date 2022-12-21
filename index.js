@@ -326,8 +326,8 @@ PinView.defaultProps = {
   inputAreaStyle: { marginVertical: 12 },
   activeOpacity: 0.9,
   buttonTextStyle: {
-    color: "#FFF",
-    fontSize: 30,
+    color: "red",
+    fontSize: 10,
   },
   customRightAccessibilityLabel: "right",
   customLeftAccessibilityLabel: "left",

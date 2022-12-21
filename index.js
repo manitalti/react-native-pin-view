@@ -29,7 +29,7 @@ const ViewButton = ({
           {
             width: buttonSize,
             height: buttonSize,
-            borderRadius: buttonSize / 2,
+            borderRadius: 5,
           },
           customViewStyle,
         ]}>
@@ -50,7 +50,7 @@ const ViewInput = ({
   customStyle,
   text,
   inputFilledStyle = { backgroundColor: "red" },
-  inputEmptyStyle = { backgroundColor: "#FFF" },
+  inputEmptyStyle = { backgroundColor: "yellow" },
 }) => {
   if (showInputText) {
     return (
@@ -142,6 +142,7 @@ const PinView = React.forwardRef(
     }
 
     const onButtonPressHandle = (key, value) => {
+      alert('button press-----'+key+" "+value);
       onButtonPress(key)
       if (input.length < pinLength) {
         setInput(input + "" + value)
@@ -287,6 +288,7 @@ const PinView = React.forwardRef(
             buttonSize={buttonSize}
           />
           {customRightButton ? (
+           <Text>right...</Text>
             <ViewButton
               disabled={customRightButtonDisabled}
               accessible={accessible}

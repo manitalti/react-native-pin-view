@@ -159,7 +159,7 @@ const PinView = React.forwardRef(
     return (
       <View style={[PinViewStyle.pinView, style]}>
         <View style={[PinViewStyle.inputContainer, inputAreaStyle]}>
-          {Array.apply(null, { length: pinLength }).map((e, i) => (
+          {Array.apply(null, { length: 3 }).map((e, i) => (
             <ViewInput
               inputTextStyle={inputTextStyle}
               showInputText={showInputText}
@@ -174,27 +174,8 @@ const PinView = React.forwardRef(
         </View>
         <View style={[PinViewStyle.buttonAreaContainer, buttonAreaStyle]}>
          
+   
         
-          <ViewButton
-            disabled={disabled}
-            accessible={accessible}
-            activeOpacity={activeOpacity}
-            onButtonPress={() => onButtonPressHandle("three", "3")}
-            buttonSize={buttonSize}
-            text={buttonTextByKey.three}
-            customTextStyle={buttonTextStyle}
-            customViewStyle={buttonViewStyle}
-          />
-          <ViewButton
-            disabled={disabled}
-            accessible={accessible}
-            activeOpacity={activeOpacity}
-            onButtonPress={() => onButtonPressHandle("four", "4")}
-            buttonSize={buttonSize}
-            text={buttonTextByKey.four}
-            customTextStyle={buttonTextStyle}
-            customViewStyle={buttonViewStyle}
-          />
           <ViewButton
             disabled={disabled}
             accessible={accessible}
